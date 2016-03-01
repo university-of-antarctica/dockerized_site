@@ -1,0 +1,6 @@
+[submodule "gpwclark.github.io"]
+  path = gpwclark.github.io
+  url = https://github.com/gpwclark/gpwclark.github.io
+[submodule "web"]
+  path = web
+  url = https://github.com/university-of-antarctica/web
