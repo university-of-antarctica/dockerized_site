@@ -1,0 +1,4 @@
+[Service]
+Restart=always
+ExecStart=/usr/local/bin/docker-compose -f /home/price/development/dockerized_site/docker-compose.yml up --no-recreate
+ExecStop=/usr/local/bin/docker-compose -f /home/price/development/dockerized_site/docker-compose.yml stop
