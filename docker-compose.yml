@@ -3,7 +3,6 @@ services:
   nginx_img_1:
     build:
       context: .
-      dockerfile: Dockerfile
     ports:
       - 80:80
     volumes_from:
