@@ -15,13 +15,12 @@ Dockerfiles.
 
 Finally you must modify the docker-compose.yml. Make sure the nginx
 container has the attributes for `volumes_from` and `depends_on` set
-to the containers that rerpresent the static sites. Set the `context`
+to the containers with the static sites. Finally, set the `context`
 field of each container to be the location of its respective Dockerfile.
 
-The current configuration e.g. submodules, submodule dockerfiles, nginx.conf,   
-the nginx Dockerfile can all serve as a model.
+The current configuration e.g. submodules, submodule dockerfiles, nginx.conf, and the nginx Dockerfile can all serve as a model.
 
 ## Systemd
 
-There is also a docerized_site.service file which can be copied to
+There is also a dockerized_site.service file which can be copied to
 `/etc/systemd/system` and then started with `sudo systemctl start dockerized_site.service`
